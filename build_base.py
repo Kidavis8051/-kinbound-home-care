@@ -63,7 +63,7 @@ def head(title, description, path, extra_schema=""):
 
 def nav_html(current_path):
     def is_current(href):
-        return " current" if href == current_path else ""
+        return ' class="current"' if href == current_path else ""
 
     parts = ['<nav class="primary-nav" aria-label="Primary">', "<ul>"]
     for label, href in NAV_ITEMS:
@@ -151,7 +151,7 @@ def footer_html():
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Kinbound Home Care. Locally owned &amp; operated in Omaha, Nebraska.</span>
-      <span>Non-medical home care &mdash; not a licensed home health or skilled nursing agency.</span>
+      <span>Non-medical home care for Omaha-area seniors and families.</span>
     </div>
   </div>
 </footer>

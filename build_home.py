@@ -84,7 +84,7 @@ BODY = f"""
       </div>
       <div class="svc-card">
         <h3>Dementia &amp; Memory Support</h3>
-        <p>Structure, patience and cueing from caregivers trained to support memory loss with steadiness, not correction.</p>
+        <p>Structure, patience and cueing from caregivers matched for the steadiness that memory loss calls for &mdash; not correction.</p>
         <a class="more" href="/dementia-memory-care-omaha-ne/">Explore Dementia Support &rsaquo;</a>
       </div>
     </div>
@@ -167,12 +167,11 @@ BODY = f"""
 SCHEMA = f"""<script type="application/ld+json">
 {{
   "@context": "https://schema.org",
-  "@type": "HomeHealthCareService",
+  "@type": "LocalBusiness",
   "name": "Kinbound Home Care",
   "url": "{DOMAIN}/",
   "telephone": "{PHONE_TEL}",
   "image": "{DOMAIN}/assets/img/og-default.jpg",
-  "priceRange": "$$",
   "areaServed": [
     {{"@type": "City", "name": "Omaha, NE"}},
     {{"@type": "City", "name": "Elkhorn, NE"}},
@@ -194,7 +193,7 @@ SCHEMA = f"""<script type="application/ld+json">
 
 write("index.html", page(
     title="Home Care in Omaha, NE | Kinbound Home Care",
-    description="Kinbound Home Care provides personal care, companion care, homemaker services and dementia support for Omaha-area seniors, matched intentionally to the right caregiver.",
+    description="Kinbound provides personal care, companion care, homemaker and dementia support for Omaha-area seniors, matched intentionally to the right caregiver.",
     path="/",
     body=BODY,
     schema=SCHEMA,
